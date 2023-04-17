@@ -512,5 +512,33 @@ html{
 .navigation__main--item--institutional-hov:hover .navigation__mega-menu--institutional{
     display:flex;
 }
+/* Redeem Gift */
+
+.redeem-gift{
+    padding:1rem 2rem;
+    background:#FEF6D8;
+    display:grid;
+    place-items:center;
+}
+.redeem-gift__content{
+    font-size: 1.3rem;
+    display:flex;
+    align-items: center;
+    column-gap: 2rem;
+}
+.redeem-gift__content--main{
+    display:flex;
+    align-items: center;
+}
+.redeem-gift__content--main img{
+    margin-right: 6px;
+}
+.redeem-gift__content--btn{
+    padding:4px 8px;
+    border-radius: 4px;
+    background:#FCD535;
+    font-size:1.3rem;
+    white-space: nowrap;
+}
 
 
