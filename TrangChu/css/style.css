@@ -1,0 +1,516 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;1,100&display=swap);
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family:'Poppins', sans-serif;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* Dark-light theme colors */
+
+.dark-mode--theme{
+    background:rgb(11, 14, 17);
+}
+
+.dark-mode--theme .navigation{
+    background:#181A20;
+}
+
+.dark-mode--theme .navigation__mega-menu{
+    background:#1E2329;
+}
+.dark-mode--theme .navigation__mega-menu--item:hover{
+    background:#2B3139;
+}
+
+.dark-mode--theme .theme--text{
+    color:rgb(234, 236, 239);
+}
+
+.dark-mode--theme .theme--text-light{
+    color:#B7BDC6;
+}
+
+.dark-mode--theme .navigation__main--item span{
+    color:rgb(234, 236, 239);
+}
+
+.dark-mode--theme .header{
+    background-color:rgb(11, 14, 17);
+}
+.dark-mode--theme .redeem-gift{
+    background:rgb(60, 38, 1);
+}
+
+.dark-mode--theme .dark-mode-background{
+    background:#181A20;
+}
+.dark-mode--theme .popular-cryptocurrencies__content--item__data:hover{
+    background:#2B3139;
+}
+
+.dark-mode--theme .trade-bitcoin .max-wrapper__content{
+    background:#281A00;
+}
+
+.dark-mode--theme .daily-rewards__content--card{
+    background:rgb(43, 49, 57);
+}
+
+.dark-mode--theme .daily-rewards__content--card:hover{
+    background:rgb(24, 26, 32);
+}
+
+.dark-mode--theme .daily-rewards__content--card:hover{
+    background:rgb(24, 26, 32);
+}
+
+.dark-mode--theme .daily-rewards__content--card:hover .daily-rewards__content--card__footer--trailing{
+    background:rgb(252, 213, 53);
+}
+
+.dark-mode--theme .daily-rewards__content--card .daily-rewards__content--card__footer--trailing{
+    background:rgb(30, 35, 41);
+}
+
+.dark-mode--theme .daily-rewards__content--card:hover .daily-rewards__content--card__footer--trailing svg{
+    color:rgb(11, 14, 17);
+}
+
+.dark-mode--theme .explore__content--card{
+    background:#0B0E11;
+}
+
+.dark-mode--theme .trade__content--download__apps--app > div:hover{
+    background:#2B3139;
+}
+
+.dark-mode--theme .trade__content--download__apps--app > div svg{
+    color:#EAECEF;
+}
+
+.dark-mode--theme .trade__content--download__apps--app > div p{
+    color:#EAECEF;
+}
+
+.dark-mode--theme .trade__content--download__scan{
+    background:#0B0E11;
+}
+
+.dark-mode--theme .earn{
+    background:#0B0E11;
+}
+
+.dark-mode--theme .header__main--content__auth-btn--btn{
+    background:#474D57;
+    color:#EAECEF;
+}
+
+.dark-mode--theme .header__main--content__auth-btn--btn svg{
+    fill:#EAECEF;
+}
+
+.dark-mode--theme .header__main--content__continue p{
+    padding:0 10px;
+    color:#848E9C;
+}
+.dark-mode--theme .header__main--content__continue span{
+    flex:1;
+    height:1px;
+    background:#848E9C;
+}
+
+.dark-mode--theme .mobile-navigation{
+    background-color:rgb(30, 35, 41);
+}
+
+.dark-mode--theme .mobile-navigation__settings--item:hover{
+    background-color: rgb(43, 49, 57);
+}
+
+.dark-mode--theme .mobile-navigation__settings--item__theme-btn{
+    background:rgb(71, 77, 87);
+}
+
+.dark-mode--theme .mobile-navigation__settings--item__theme-btn > div > svg{
+    color:rgb(132, 142, 156);
+}
+
+.dark-mode--theme  .mobile-navigation__main--item__title:hover{
+    background-color:rgb(43, 49, 57);
+}
+.dark-mode--theme  .mobile-navigation__main--item__body--item:hover{
+    background-color:rgb(43, 49, 57);
+}
+
+.green--text-color{
+    color:rgb(3, 166, 109);
+}
+.red--text-color{
+    color:rgb(207, 48, 74);
+}
+
+/* Font families */
+
+:root{
+    --primary-font:'Poppins', sans-serif;
+    --secondary-font:'Roboto', sans-serif;
+    --tertiary-font:'Oswald', sans-serif;
+}
+
+/* Element colors */
+
+:root{
+    --yellow-dark:rgb(201, 148, 0);
+    --yellow-strong:rgb(240, 185, 11);
+}
+
+/* Hover colors */
+
+:root{
+    --yellow-light-hover:rgb(240, 185, 11);
+    --yellow-dark-hover:rgb(201,148,0);
+}
+
+.std-title-more:hover{
+    color:#F0B90B;
+}
+
+/* Max wrappers utility class */
+
+.max-wrapper{
+    max-width:1600px;
+    margin:0 auto;
+}
+.max-wrapper__content{
+    width:90%;
+    margin:0 auto;
+}
+.std-top-space{
+    padding-top: 10rem;
+}
+.std-title{
+    font-size: 4rem;
+    color:rgb(30, 35, 41);
+    font-weight:600;
+}
+.std-subtitle{
+    font-weight:400;
+    font-size:1.8rem;
+    color:#474D57;
+    padding-top:8px;
+}
+@media screen and (max-width:1024px){
+    .std-title{
+        font-size: 3.2rem;
+    }
+}
+@media screen and (max-width:768px){
+    .std-title{
+        font-size: 2.5rem;
+    }
+    .std-subtitle{
+        font-size:1.6rem;
+    }
+}
+
+/* Button Style */
+
+.btn{
+    padding: 1.3rem;
+    background: #FBD849;
+    display: grid;
+    place-items: center;
+    font-size: 1.8rem;
+    border-radius: 5px;
+    width: 100%;
+    max-width:20rem;
+    font-weight: 500;
+    font-family: var(--secondary-font);
+}
+@media screen and (max-width:768px){
+    .btn{
+        max-width: 100%;
+    }
+}
+
+
+/* Navigation */
+
+.navigation{
+    padding:0 2rem;
+    display:flex;
+    align-items: center;
+    cursor:pointer;
+    position:relative;
+}
+.navigation__logo{
+    margin-right: 2rem;
+}
+@media screen and (max-width:1080px){
+    .navigation__logo{
+        padding:2rem 0;
+    }
+}
+.navigation__logo svg{
+    fill: var(--yellow-strong);
+    color: var(--yellow-strong);
+    width:120px;
+    height:24px;
+}
+.navigation__main{
+    display:flex;
+}
+@media screen and (max-width:1080px){
+    .navigation__main{
+        display:none;
+    }
+}
+.navigation__main--item{
+    padding: 2rem 0;
+    display:flex;
+    align-items: center;
+    transition: 100ms ease;
+    font-family: var(--secondary-font);
+    font-size:1.5rem;
+    white-space:nowrap;
+}
+.navigation__main--item:not(:last-child){
+    margin-right: 1.2rem;
+}
+.navigation__main--item:hover > span{
+    color:var(--yellow-light-hover);
+}
+.navigation__main--item:hover .navigation__main--item__apps{
+    color:var(--yellow-light-hover);
+}
+.navigation__main--item:hover .navigation__main--item__dropdown{
+    transform: rotate(-180deg);
+}
+.navigation__main--item__dropdown{
+    color:#707A8A;
+    transition: 250ms ease;
+}
+.navigation__sub{
+    display:flex;
+    align-items: center;
+    font-size:1.5rem;
+    margin-left: auto;
+}
+.navigation__sub--auth{
+    display:flex;
+    align-items: center;
+}
+@media screen and (max-width:320px){
+    .navigation__sub--auth{
+        display:none;
+    }    
+}
+.navigation__sub--auth__btn{
+    display:flex;
+    align-items: center;
+    padding:6px 12px;
+    color:rgb(24,26,32);
+    border-radius: 4px;
+    font-size:1.4rem;
+    margin-right: 2rem;
+}
+.navigation__sub--auth__btn svg{
+    height:1.6rem;
+    width:1.6rem;
+    margin-right: 8px;
+}
+.navigation__sub--auth__btn--login:hover{
+    color:var(--yellow-light-hover);
+}
+.navigation__sub--auth__btn--register{
+    background:rgb(252,213,53);
+}
+@media screen and (max-width:1160px){
+    .navigation__sub--auth__btn--login{
+        display:none;
+    }
+}
+.navigation__sub--settings{
+    display:flex;
+    align-items: center;
+}
+.navigation__sub--settings__download{
+    margin-right:1.5rem;
+    margin-left:5px;
+}
+.navigation__sub--settings__language{
+    margin-right: 5px;
+    font-size: 21px;
+}
+.navigation__sub--settings__currency{
+    font-size: 1.4rem;
+}
+.navigation__sub--settings__divider{
+    width:1px;
+    margin: 0 5px;
+    background:#aaa;
+    height:12px;
+}
+.navigation__sub--settings__theme{
+    font-size: 1.8rem;
+}
+.navigation__sub--settings--item:hover{
+    color:var(--yellow-light-hover);
+}
+@media screen and (max-width:1300px){
+    .navigation__sub--settings__download,
+    .navigation__sub--settings__language, 
+    .navigation__sub--settings__currency,
+    .navigation__sub--settings__divider,
+    .navigation__sub--settings__theme{
+        display:none;
+    }
+}
+.navigation__sub--menu{
+    display:none;
+    place-items: center;
+}
+@media screen and (max-width:1300px){
+    .navigation__sub--menu{
+        display:grid;
+    }
+}
+/* ------ Navigation mega menu apps ------- */
+
+.navigation__mega-menu{
+    position: absolute;
+    top:100%;
+    box-shadow: 0px 0px 20px rgb(0 0 0 / 8%);
+    background:#fff;
+    padding:1.5rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    display:flex;
+    display:none;
+}
+.navigation__mega-menu--item{
+    height:7.5rem;
+    padding:0 2rem;
+    border-radius: 1rem;
+    display:flex;
+    align-items: center;
+    background:transparent;
+    width: 100%;
+}
+.navigation__mega-menu--item:hover{
+    background:#f5f5f5;
+}
+.navigation__mega-menu--item:hover .navigation__mega-menu--item__arrow{
+    opacity:1;
+}
+.navigation__mega-menu--item__img{
+    margin-right: 2rem;
+}
+.navigation__mega-menu--item__content{
+    max-width:26rem;
+    width:100%;
+    margin-right: 2rem;
+    white-space: normal;
+}
+.navigation__mega-menu--item__content h2{
+    font-size:1.5rem;
+    font-weight:400;
+    color:#1E2329;
+    padding-bottom: 2px;
+}
+.navigation__mega-menu--item__content p{
+    font-size:1.3rem;
+    color:#707A8A;
+}
+.navigation__mega-menu--item__arrow{
+    color:#F0b90b;
+    opacity:0;
+    transition: 400ms ease;
+}
+
+/* ---- Header mega menu apps hover link up ---- */
+.navigation__mega-menu--apps{
+    left:14rem;
+}
+.navigation__main--item--apps-hov:hover .navigation__mega-menu--apps{
+    display:flex;
+}
+
+/* ---- Header mega menu buy crypto hover link up ---- */
+
+.navigation__mega-menu--buy-crypto{
+    left:20rem;
+}
+.navigation__mega-menu--buy-crypto__pay{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.navigation__mega-menu--buy-crypto__pay > div{
+    display:flex;
+    align-items: center;
+}
+.navigation__mega-menu--buy-crypto__pay > div > img{
+    margin-right: 5px;
+}
+.navigation__mega-menu--buy-crypto__pay > div > svg{
+    transform: rotate(-90deg);
+    margin-left: 5px;
+}
+.navigation__main--item--buy-crypto-hov:hover .navigation__mega-menu--buy-crypto{
+    display:flex;
+}
+
+/* ---- Header mega menu trade hover link up ---- */
+
+.navigation__mega-menu--trade{
+    left:38rem;
+}
+.navigation__main--item--trade-hov:hover .navigation__mega-menu--trade{
+    display:flex;
+}
+
+/* ---- Header mega menu derivatives hover link up ---- */
+
+.navigation__mega-menu--derivatives{
+    left:45rem;
+}
+.navigation__main--item--derivatives-hov:hover .navigation__mega-menu--derivatives{
+    display:flex;
+}
+
+/* ---- Header mega menu earn hover link up ---- */
+
+.navigation__mega-menu--earn{
+    left:52rem;
+}
+.navigation__main--item--earn-hov:hover .navigation__mega-menu--earn{
+    display:flex;
+}
+
+/* ---- Header mega menu finance hover link up ---- */
+
+.navigation__mega-menu--finance{
+    left:63rem;
+}
+.navigation__main--item--finance-hov:hover .navigation__mega-menu--finance{
+    display:flex;
+}
+
+/* ---- Header mega menu institutional hover link up ---- */
+
+.navigation__mega-menu--institutional{
+    right:25rem;
+}
+.navigation__main--item--institutional-hov:hover .navigation__mega-menu--institutional{
+    display:flex;
+}
+
+
