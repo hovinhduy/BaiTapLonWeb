@@ -1608,4 +1608,140 @@ Need Help
     font-size:1.4rem;
     padding-top:1rem;
 }
+/* 
+
+Start Earning Today
+
+*/
+
+.earn{
+    background:#FAFAFA;
+    padding:8rem 0;
+}
+.earn > div{
+    display:grid;
+    place-items:center;
+}
+
+.earn h1{
+    margin-bottom:4rem;
+}
+
+/* 
+
+Binance Footer
+
+*/
+
+.footer{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 2fr 1.1fr;
+    column-gap:1rem;
+    cursor:pointer;
+    padding-top:5rem;
+}
+@media screen and (max-width:1024px){
+    .footer{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        row-gap:5rem;
+    } 
+    .footer__links:last-child{
+        grid-column: 1/span 4;
+    }
+}
+.footer__links h1{
+    color:#1E2329;
+    font-size:1.9rem;
+    font-weight:600;
+    padding-bottom:1rem;
+    display:flex;
+    justify-content: space-between;
+}
+.footer__links h1 span{
+    display:none;
+}
+@media screen and (max-width:768px){
+    .footer__links h1{
+        font-size:1.6rem;
+    }
+    .footer__links h1 span{
+        display:block;
+    }
+    .footer__links--link{
+        transition: 250ms ease-in;
+        overflow:hidden;
+        height:auto;
+    }
+    .footer__links--link:not(.effect){
+        display:none;
+    }
+}
+.footer__links--link{
+    color:#707A8A;
+}
+.footer__links--link p{
+    font-size:1.4rem;
+    padding-bottom:8px;
+}
+.footer__links--double{
+    display:flex;
+    column-gap: 1rem;   
+}
+@media screen and (max-width:1024px){
+    .footer__links--double{
+        flex-direction: column;  
+        row-gap:2rem;
+    }
+}
+.footer__links--community{
+    display:flex;
+    flex-wrap:wrap;
+    padding-top:8px;
+    color:#707A8A;
+}
+.footer__links--community > div{
+    font-size:18px;
+    margin-right:3.2rem;
+    margin-bottom:2.4rem;
+    width:2.5rem;
+    height:2.5rem;
+}
+@media screen and (max-width:768px){
+    .footer{
+        display:flex;
+        flex-direction:column;
+        row-gap:2rem;
+    } 
+}
+
+.desktop-footer{
+    display: block;
+}
+.mobile-footer{
+    display:none;
+}
+@media screen and (max-width:768px){
+    .desktop-footer{
+        display: none;
+    }    
+    .mobile-footer{
+        display:block;
+    }
+}
+
+/* 
+
+Binance Copyright Text
+
+*/
+.copyright{
+    padding-top: 2.5rem;
+}
+.copyright__text{
+    border-top:1px solid #EAECEF;
+    text-align:center;
+    padding:2rem 0;
+    color:#707A8A;
+    font-size:1.4rem;
+}
 
