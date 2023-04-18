@@ -1032,3 +1032,120 @@ Crypto Portfolio
     color:#474D57;
 }
 
+/* 
+
+Daily Rewards
+
+*/
+
+.daily-rewards__content{
+    margin:4rem 0;
+    grid-template-columns: repeat(4, 1fr);
+    display:grid;
+    row-gap:2rem;
+    column-gap:2rem;
+}
+@media screen and (max-width:1024px){
+    .daily-rewards__content{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media screen and (max-width:768px){
+    .daily-rewards__content{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width:320px){
+    .daily-rewards__content{
+        grid-template-columns: 1fr;
+    }
+}
+.daily-rewards__content--card{
+    width:100%;
+    padding:2rem;
+    border:2px solid transparent;
+    border-radius:1.5rem;
+    background:#fafafa;
+}
+@media screen and (max-width:1024px){
+    .daily-rewards__content--card:nth-child(7){
+        display:none;
+    }
+    .daily-rewards__content--card:nth-child(8){
+        display:none;
+    }
+}
+@media screen and (max-width:425px){
+    .daily-rewards__content--card{
+        padding:1rem;
+    }
+}
+.daily-rewards__content--card:hover{
+    border:2px solid rgb(252, 213, 53);
+}
+.daily-rewards__content--card__title{
+    color:rgb(30, 35, 41);
+    font-weight:400;
+    font-size:1.6rem;
+}
+@media screen and (max-width:425px){
+    .daily-rewards__content--card__title{
+        font-size:1.4rem;
+    }
+}
+.daily-rewards__content--card__content{
+    font-weight: 400;
+    color:rgb(3, 166, 109);
+    font-size:2.4rem;
+    font-family:var(--tertiary-font);
+    padding-top: 4px;
+    padding-bottom: 3rem;
+}
+@media screen and (max-width:768px){
+    .daily-rewards__content--card__content{
+        font-size:2rem;
+    }
+}
+@media screen and (max-width:375px){
+    .daily-rewards__content--card__content{
+        font-size:1.6rem;
+    }
+}
+.daily-rewards__content--card__footer{
+    display:flex;
+    justify-content: space-between;
+}
+.daily-rewards__content--card__footer--leading{
+    display:flex;
+    align-items:center;
+    column-gap: 8px;
+}
+.daily-rewards__content--card__footer--leading img{
+    height:3rem;
+    width:3rem;
+}
+.daily-rewards__content--card__footer--leading span{
+    font-size:1.4rem;
+    font-weight: 600;
+    color:rgb(30, 35, 41);
+}
+.daily-rewards__content--card__footer--trailing{
+    display:grid;
+    place-items:center;
+    background:#EAECEF;
+    border-radius: 50%;
+    height:3.5rem;
+    width:3.5rem;
+}
+@media screen and (max-width:768px){
+    .daily-rewards__content--card__footer--trailing{
+        display:none;
+    }
+}
+.daily-rewards__content--card__footer--trailing svg{
+    height:2.5rem;
+    width:2.5rem;
+    color:#929AA5;
+}
+
+
